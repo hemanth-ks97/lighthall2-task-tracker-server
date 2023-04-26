@@ -1,10 +1,13 @@
-#Server for Task-Tracker
+# Server for Task-Tracker
 
 Currently contains the following APIs
 
 2. POST /signup
 send {"username":"Bob"} in the http request.
 Returns a array of JSON task objects
+
+```json
+
 [
     {
         "username": "Bob",
@@ -23,6 +26,7 @@ Returns a array of JSON task objects
         "due_date": "2023-04-17T00:00:00.000Z"
     }
 ]
+```
 
 3. GET /
 returns 'Hello World!'
